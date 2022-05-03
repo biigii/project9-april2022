@@ -6,23 +6,3 @@
     padding: 0;
 }
 
-@media (max-width: 800px) {
-  /*  i like these styling to apply */
-    body {
-      background-color: #ff0;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1200px) {
-  body {
-    background-color: #000;
-    color: #fff;
-  }
-}
-
-@media (min-width: 1200px) {
-  /* this section only works when screen size is more than 800px */
-  body {
-    background-color: #f11;
-  }
-}

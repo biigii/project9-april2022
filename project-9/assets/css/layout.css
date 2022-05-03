@@ -1,17 +1,47 @@
 .container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 15px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px;
 }
 
 .row::after {
-  clear: both;
-  content: '';
-  display: block;
+    clear: both;
+    content: '';
+    display: block;
 }
 
 .column {
-  float: left;
-  width: 25%;
-  padding: 10px;
+    float: left;
+    padding: 10px;
+}
+
+@media (min-width: 1400px) {
+    .column {
+        width: 25%;
+    }
+
+    h2 {
+        color: #678;
+        text-align: center;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1400px) {
+    .column {
+        width: 50%;
+    }
+    h2 {
+        text-align: right;
+        color: #f11;
+    }
+}
+
+@media (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+    h2 {
+        text-align: left;
+        color: #ff0;
+    }
 }
