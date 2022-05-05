@@ -6,7 +6,7 @@
 
 body,
 html {
-    height: 100%;
+    min-height: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -15,11 +15,16 @@ h1 {
     font-size: 3em;
 }
 
-.col {
-    /* border: 3px solid #f11; */
+figure {
+    background-color: #ff0;
+    width: 640px;
+    height: 480px;
+    padding: 50px;
 }
 
 img {
-    width:100%;
-    /* height: auto; */
+    width: 425px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
 }
